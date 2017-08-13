@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Нёрдс</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a href="index.html" class="logo"><img src="#" width="1" height="1" alt="Магазин готовых шаблонов"></a> 
+				<ul class="menu">
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li class="menu-current"><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="busket">
+					<li class="busket-user"><a href="#">>Корзина</a></li>
+				</ul>
+			</nav>	
+			<h1 class="description-page">Магазин готовых шаблонов</h1>
+		</header>
+		<main class="container">
+			<section class="filters">
+				<h2 class="unvisible">Фильтр шаблонов</h2>
+				<form method="get" action="https://echo.htmlacademy.ru">
+					<fieldset>
+						<legend>Стоимость</legend>
+						<ul>
+							<li class="filter-from">от</li>
+							<li class="filter-to">до</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Сетка</legend>
+						<ul>
+							<li class="filter-item">
+							<input class="unvisible filter-input filter-input-radio" type="radio" name="filter-grid" value="adaptiv">
+							Адаптивная</li>
+							<li class="filter-item">
+								<input class="unvisible filter-input filter-input-radio" type="radio" name="filter-grid" value="fix">
+							Фиксированная</li>
+							<li class="filter-item">
+							<input class="unvisible filter-input filter-input-radio" type="radio" name="filter-grid" value="rubber">
+							Резиновая</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности</legend>
+						<ul>
+							<li class="filter-item">
+								<input class="unvisible filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+							Слайдер</li>
+							<li class="filter-item">
+								<input class="unvisible filter-input filter-input-checkbox" type="checkbox" name="advantages">
+							Блок преимуществ</li>
+							<li class="filter-item">
+								<input class="unvisible filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+							Новости</li>
+							<li class="filter-item">
+								<input class="unvisible filter-input filter-input-checkbox" type="checkbox" name="gallery">
+							Галерея</li>
+							<li class="filter-item">
+								<input class="unvisible filter-input filter-input-checkbox" type="checkbox" name="busket">
+							Корзина</li>
+						</ul>
+					</fieldset>
+				</form>
+				<button type="submit" class="button filter-btn">Показать</button>
+				<fieldset>
+						<legend>Сортировать</legend>
+						<ul>
+							<li class="filter-item">
+							По цене</li>
+							<li class="filter-item">
+							По типу</li>
+							<li class="filter-item">
+							По названию</li>
+						</ul>
+					</fieldset>
+			</section>
+			<section class="catalog">
+				<h2 class="unvisible">Каталог готовых шаблонов</h2>
+				<ul class="catalog-list">
+					<li class="catalog-item catalog-item-sedona">
+						<h3>
+							<a href="#">
+								<span class="catalog-item-name">SEDONA</span>
+								<span class="catalog-item-description">Информационный сайт для туристов</span>
+							</a>
+							<button class="button catalog-item-btn">9 900 руб.</button>
+						</h3>
+					</li>
+					<li class="catalog-item catalog-item-pink">
+						<h3>
+							<a href="#">
+								<span class="catalog-item-name">PINK</span>
+								<span class="catalog-item-description">Информационный сайт</span>
+							</a>
+							<button class="button catalog-item-btn">9 900 руб.</button>
+						</h3>
+					</li>
+					<li class="catalog-item catalog-item-borodinski">
+						<h3>
+							<a href="#">
+								<span class="catalog-item-name">BORODINSKI</span>
+								<span class="catalog-item-description">Информационный сайт</span>
+							</a>
+							<button class="button catalog-item-btn">9 900 руб.</button>
+						</h3>
+					</li>
+					<li class="catalog-item catalog-item-mishka">
+						<h3>
+							<a href="#">
+								<span class="catalog-item-name">MISHKA</span>
+								<span class="catalog-item-description">Информационный сайт</span>
+							</a>
+							<button class="button catalog-item-btn">9 900 руб.</button>
+						</h3>
+					</li>
+					<li class="catalog-item catalog-item-academy">
+						<h3>
+							<a href="#">
+								<span class="catalog-item-name">ACADEMY</span>
+								<span class="catalog-item-description">Информационный сайт</span>
+							</a>
+							<button class="button catalog-item-btn">9 900 руб.</button>
+						</h3>
+					</li>
+					<li class="catalog-item catalog-item-kvast">
+						<h3>
+							<a href="#">
+								<span class="catalog-item-name">КВАСТ</span>
+								<span class="catalog-item-description">Информационный сайт</span>
+							</a>
+							<button class="button catalog-item-btn">9 900 руб.</button>
+						</h3>
+					</li>
+				</ul>
+				<ul class="pagination-list">
+					<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+					<li class="pagination-item"><a href="#">2</a></li>
+					<li class="pagination-item"><a href="#">3</a></li>
+					<li class="pagination-item"><a href="#">Следующая</a></li>
+				</ul>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<section class="map">
+				<h2 class="unvisible">Контактная информация</h2>
+				<p class="contact-big">NЁRDS DESIGN STUDIO</p>
+				<p class="contact-address">191186, Санкт-Петербург,<br>
+				ул.Б. Конюшенная, д.19/8<br>
+				тел. +7 (812) 275-75-75</p>
+				<a href="#" class="button contact-btn">Напишите нам</a>
+			</section>
+			<section class="social-block">
+				<h2 class="unvisible">Социальные сети</h2>
+				<ul class="social">
+					<li> <a href="#" class="social-btn vk">Вконтакте</a></li>
+					<li> <a href="#" class="social-btn vk">Фейсбук</a></li>
+					<li> <a href="#" class="social-btn vk">Инстаграм</a></li>
+				</ul>
+				<p class="social-big">Давайте дружить, это выгодно!</p>
+				<p class="social-small">10% скидка для друзей из социальных сетей.</p>
+			</section>
+		</footer>
+	</body>
+</html>
