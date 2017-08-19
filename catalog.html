@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
 			<nav class="main-navigation">
-				<a href="index.html" class="logo"><img src="#" width="1" height="1" alt="Магазин готовых шаблонов"></a>
+				<a href="index.html" class="logo"><img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн студия NЁRDS"></a>
 				<ul class="menu">
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
@@ -20,7 +21,7 @@
 		<main class="container">
 			<h1 class="description-page">Магазин готовых шаблонов</h1>
 			<section class="filters">
-				<h2 class="unvisible">Фильтр шаблонов</h2>
+				<h2 class="visually-hidden">Фильтр шаблонов</h2>
 				<form method="get" action="https://echo.htmlacademy.ru">
 					<fieldset>
 						<legend>Стоимость</legend>
@@ -34,19 +35,19 @@
 						<ul>
 							<li class="filter-item">
 								<label>
-									<input class="unvisible filter-input filter-input-radio" type="radio" name="filter-grid" value="adaptive">
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid" value="adaptive">
 									Адаптивная
 								</label>
 							</li>
 							<li class="filter-item">
 								<label>
-									<input class="unvisible filter-input filter-input-radio" type="radio" name="filter-grid" value="fix">
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid" value="fix">
 									Фиксированная
 								</label>
 							</li>
 							<li class="filter-item">
 								<label>
-									<input class="unvisible filter-input filter-input-radio" type="radio" name="filter-grid" value="rubber">
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid" value="rubber">
 									Резиновая
 								</label>
 							</li>
@@ -57,31 +58,31 @@
 						<ul>
 							<li class="filter-item">
 								<label>
-									<input class="unvisible filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
 									Слайдер
 								</label>
 							</li>
 							<li class="filter-item">
 								<label>
-									<input class="unvisible filter-input filter-input-checkbox" type="checkbox" name="advantages">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages">
 									Блок преимуществ
 								</label>
 							</li>
 							<li class="filter-item">
 								<label>
-									<input class="unvisible filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
 									Новости
 								</label>
 							</li>
 							<li class="filter-item">
 								<label>
-									<input class="unvisible filter-input filter-input-checkbox" type="checkbox" name="gallery">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
 									Галерея
 								</label>
 							</li>
 							<li class="filter-item">
 								<label>
-									<input class="unvisible filter-input filter-input-checkbox" type="checkbox" name="basket">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket">
 									Корзина
 								</label>
 							</li>
@@ -109,10 +110,10 @@
 						</ul>
 			</section>
 			<section class="catalog">
-				<h2 class="unvisible">Каталог готовых шаблонов</h2>
+				<h2 class="visually-hidden">Каталог готовых шаблонов</h2>
 				<ul class="catalog-list">
 					<li class="catalog-item catalog-item-sedona">
-						<img src="#" width="1" height="1" alt="Шаблон SEDONA">
+						<img src="img/sedona.jpg" width="360" height="576" alt="Шаблон SEDONA">
 						<h3>
 							<a href="#" class="catalog-item-name">SEDONA</a>
 						</h3>
@@ -120,41 +121,41 @@
 						<button class="button catalog-item-btn">9 900 руб.</button>
 					</li>
 					<li class="catalog-item catalog-item-pink">
-						<img src="#" width="1" height="1" alt="Шаблон PINK">
+						<img src="img/pink.jpg" width="360" height="576" alt="Шаблон PINK">
 						<h3>
-						<a href="#" class="catalog-item-name">PINK</a>
+							<a href="#" class="catalog-item-name">PINK</a>
 						</h3>
 						<p class="catalog-item-description">Информационный сайт</p>
 						<button class="button catalog-item-btn">9 900 руб.</button>
 					</li>
 					<li class="catalog-item catalog-item-borodinski">
-						<img src="#" width="1" height="1" alt="Шаблон BORODINSKI">
+						<img src="img/barbershop.jpg" width="360" height="576" alt="Шаблон BORODINSKI">
 						<h3>
-						<a href="#" class="catalog-item-name">BORODINSKI</a>
+							<a href="#" class="catalog-item-name">Barbershop</a>
 						</h3>
 						<p class="catalog-item-description">Информационный сайт</p>
 						<button class="button catalog-item-btn">9 900 руб.</button>
 					</li>
 					<li class="catalog-item catalog-item-mishka">
-						<img src="#" width="1" height="1" alt="Шаблон MISHKA">
+						<img src="img/mishka.jpg" width="360" height="576" alt="Шаблон MISHKA">
 						<h3>
-						<a href="#" class="catalog-item-name">MISHKA</a>
+							<a href="#" class="catalog-item-name">MISHKA</a>
 						</h3>
 						<p class="catalog-item-description">Информационный сайт</p>
 						<button class="button catalog-item-btn">9 900 руб.</button>
 					</li>
 					<li class="catalog-item catalog-item-academy">
-						<img src="#" width="1" height="1" alt="Шаблон ACADEMY">
+						<img src="img/academy.jpg" width="360" height="576" alt="Шаблон ACADEMY">
 						<h3>
-						<a href="#" class="catalog-item-name">ACADEMY</a>
+							<a href="#" class="catalog-item-name">academy</a>
 						</h3>
 						<p class="catalog-item-description">Информационный сайт</p>
 						<button class="button catalog-item-btn">9 900 руб.</button>
 					</li>
 					<li class="catalog-item catalog-item-kvast">
-						<img src="#" width="1" height="1" alt="Шаблон КВАСТ">
+						<img src="img/kvast.jpg" width="360" height="576" alt="Шаблон КВАСТ">
 						<h3>
-						<a href="#" class="catalog-item-name">КВАСТ</a>
+							<a href="#" class="catalog-item-name">КВАСТ</a>
 						</h3>
 						<p class="catalog-item-description">Информационный сайт</p>
 						<button class="button catalog-item-btn">9 900 руб.</button>
@@ -170,17 +171,18 @@
 		</main>
 		<footer class="main-footer">
 			<section class="map">
-				<h2 class="unvisible">Контактная информация</h2>
-				<div class="contact">
+				<img src="img/map.jpg" width="1440" height="416" alt="NЁRDS DESIGN STUDIO. 191186, Санкт-Петербург, ул.Б. Конюшенная, д.19/8">
+				<h2 class="visually-hidden">Контактная информация</h2>
+				<adress class="contact">
 					<p class="contact-name">NЁRDS DESIGN STUDIO</p>
 					<p class="contact-city">191186, Санкт-Петербург,</p>
 					<p class="contact-address">ул.Б. Конюшенная, д.19/8</p>
 					<p class="contact-tel">тел. +7 (812) 275-75-75</p>
 					<a href="#" class="button contact-btn">Напишите нам</a>
-				</div>
+				</adress>
 			</section>
 			<section class="social-block">
-				<h2 class="unvisible">Социальные сети</h2>
+				<h2 class="visually-hidden">Социальные сети</h2>
 				<ul class="social">
 					<li> <a href="#" class="social-btn vk">Вконтакте</a></li>
 					<li> <a href="#" class="social-btn fb">Фейсбук</a></li>

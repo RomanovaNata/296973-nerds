@@ -1,0 +1,17 @@
+body{
+	font-family: 'Roboto', 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: normal;
+}
+
+.catalog-item-name{
+	font-size: 18px;
+	line-height: 30px;	
+}
+
+.service-caption{
+	font-size: 24px;
+	line-height: 30px;	
+}
