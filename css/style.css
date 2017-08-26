@@ -1,17 +1,532 @@
 body{
+/* Блочная модель */
+	width: 1440px;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+/* Типографика */	
 	font-family: 'Roboto', 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
-	color: #000000;
 	font-weight: normal;
+/* Оформление */
+	color: #000000;	
 }
 
-.catalog-item-name{
-	font-size: 18px;
-	line-height: 30px;	
+fieldset{
+/* Оформление */
+	border: none;
+}
+
+a{
+/* Оформление */
+	text-decoration: none;
+}
+
+.logo:hover,
+.logo:focus{
+/* Оформление */
+	opacity: 0.8;	
+}
+
+.logo:active{
+/* Оформление */
+	opacity: 0.3;	
+}
+
+.menu,
+.filter,
+.sorting,
+.catalog-list,
+.pagination-list,
+.social,
+.services-list,
+.about-offers,
+.about-plus-all,
+.works{
+/* Оформление */
+	list-style: none;
+}
+
+.pagination-list a{
+/* Типографика */
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+/* Оформление */
+	color: #000000;	
+}
+.main-navigation a{
+/* Типографика */
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: normal;
+/* Оформление */
+	color: #000000;	
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus{
+/* Оформление */
+	color: #fb565a;	
+}
+
+.main-navigation a:active{
+/* Оформление */
+	color: #a6a6a6;	
 }
 
 .service-caption{
+/* Типографика */
 	font-size: 24px;
 	line-height: 30px;	
 }
+
+.slider-slogan{
+/* Типографика */	
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: normal;
+/* Оформление */
+}
+
+.slider-description{
+/* Типографика */
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+/* Оформление */
+	color: #283136;
+}
+
+.button{
+/* Типографика */
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	text-align: center;
+/* Оформление */
+	color: #ffffff;
+	text-transform: uppercase
+}
+
+.slider-btn{
+/* Оформление */
+	background-color: #fb565a;	
+}
+
+.slider-btn:hover,
+.slider-btn:focus{
+/* Оформление */
+	background-color: #e74246;	
+}
+
+.slider-btn:active{
+/* Оформление */
+	background-color: #d7373b;	
+}
+
+.service-btn-web{
+/* Оформление */
+	background-color: #fb565a;	
+}
+
+.service-btn-web:hover,
+.service-btn-web:focus{
+/* Оформление */
+	background-color: #e74246;	
+}
+
+.service-btn-web:active{
+/* Оформление */
+	background-color: #d7373b;	
+}
+
+.service-btn-app{
+/* Оформление */
+	background-color: #00ca74;	
+}
+
+.service-btn-app:hover,
+.service-btn-app:focus{
+/* Оформление */
+	background-color: #00bc6c;	
+}
+
+.service-btn-app:active{
+/* Оформление */
+	background-color: #00aa62;	
+}
+
+.service-btn-pres{
+/* Оформление */
+	background-color: #efc84a;	
+}
+
+.service-btn-pres:hover,
+.service-btn-pres:focus{
+/* Оформление */
+	background-color: #eab534;	
+}
+
+.service-btn-pres:active{
+/* Оформление */
+	background-color: #e5a722;	
+}
+
+.social-btn{
+/* Типографика */
+	text-align: center;
+/* Оформление */
+	background-color: #e1e1e1;
+	color: #ffffff;
+}
+
+.social-btn:hover,
+.social-btn:focus{
+/* Оформление */
+	background-color: #e74246;
+}
+
+.social-btn:active{
+/* Оформление */
+	background-color: #d7373b;
+}
+
+.filter-btn{
+/* Оформление */
+	background-color:#eeeeee;
+	border: none;
+}
+
+.filter-btn:hover,
+.filter-btn:focus{
+/* Оформление */
+	background-color:#dfdfdf; 
+	border: none;	
+}
+
+.filter-btn:active{
+/* Оформление */
+	background-color:#d5d5d5; 
+	border: none;	
+}
+
+.contact-btn{
+/* Оформление */
+	background-color:#fb565a; 	
+}
+
+.contact-btn:hover,
+.contact-btn:focus{
+/* Оформление */
+	background-color:#e74246; 	
+}
+
+.contact-btn:active{
+/* Оформление */
+	background-color:#d7373b; 	
+}
+
+.work{
+/* Оформление */
+	opacity: 0.2;
+}
+
+.work:hover,
+.work:focus{
+/* Оформление */
+	opacity: 1;
+}
+.work:active{
+/* Оформление */
+	opacity: 0.1;
+}
+
+.catalog-item-btn{
+/* Оформление */
+	background-color:#fb565a;
+	border: none;	
+}
+
+.catalog-item-btn:hover,
+.catalog-item-btn:focus{
+/* Оформление */
+	background-color:#e74246; 
+	border: none;		
+}
+
+.catalog-item-btn:active{
+/* Оформление */
+	background-color:#d7373b; 
+	border: none;	
+}
+
+.pagination-item{
+/* Оформление */
+	background-color:#eeeeee; 
+}
+
+.pagination-item:hover,
+.pagination-item:focus{
+/* Оформление */
+	background-color:#dfdfdf; 
+}
+
+.pagination-item:active{
+/* Оформление */
+	background-color:#d5d5d5; 
+}
+
+.sorting-item{
+	/* Типографика */
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	/* Оформление */
+	color:#b2b2b2;
+}
+
+.sorting-item:hover,
+.sorting-item:focus{
+/* Оформление */
+	color:#666666; 
+}
+
+.sorting-item:active{
+/* Оформление */
+	color:#000000; 
+}
+
+
+.service-caption{
+/* Типографика */
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+/* Оформление */
+}
+
+.service-description{
+/* Типографика */
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+/* Оформление */
+	color: #283136;
+}
+
+.about-caption{
+/* Типографика */
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: normal;
+/* Оформление */
+}
+
+.about-tagline{
+/* Типографика */
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+/* Оформление */
+	color: #283136;	
+}
+
+.about-development{
+/* Типографика */
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+/* Оформление */
+}
+
+.about-offer{
+/* Типографика */
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+/* Оформление */
+	color: #283136;	
+}
+
+.about-plus-advantages{
+/* Типографика */
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+/* Оформление */
+}
+
+.about-plus-data{
+/* Типографика */
+	font-size: 45px;
+	line-height: 10.06px;
+	font-weight: bold;
+/* Оформление */
+}
+
+.about-plus-description{
+/* Типографика */
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+/* Оформление */
+	color: #283136;	
+}
+
+.contact-name{
+/* Типографика */
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+/* Оформление */	
+}
+
+.contact{
+/* Типографика */
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+/* Оформление */
+	color: #666666;
+}
+
+.social-slogan{
+/* Типографика */
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+/* Оформление */
+}
+
+.social-slogan-description{
+/* Типографика */
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: normal;
+/* Оформление */
+	color: #444444;
+}
+
+.description-page{
+/* Типографика */
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: normal;
+	text-align: center;
+/* Оформление */
+	background-color: #eeeeee;
+}
+
+.sorting-caption{
+/* Типографика */
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+/* Оформление */
+}
+
+.filters-name legend{
+/* Типографика */
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+/* Оформление */
+}
+
+.filter-input + label{
+/* Типографика */
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+/* Оформление */
+	color: #283136;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label{
+/* Оформление */
+	color: #4d4d4d;
+}
+
+.filter-input:disabled + label{
+/* Оформление */
+	opacity: 0.3;
+}
+
+.catalog-item-name{
+/* Типографика */
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-align: center;
+/* Оформление */
+	color: #000000;
+}
+
+.catalog-item-description{
+/* Типографика */
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	text-align: center;
+/* Оформление */
+	color: #666666;	
+}
+
+.pagination-item{
+/* Типографика */
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+/* Оформление */
+}
+
+.main-header{
+/* Оформление */
+	background-color: #eeeeee;
+}
+
+.slider{
+/* Оформление */
+	background-color: #eeeeee;
+}
+
+.background{
+/* Оформление */
+	background-color: #ffffff;
+}
+
+.main-footer{
+/* Оформление */
+	background-color: #ffffff;
+}
+
+.visually-hidden{
+/* Позиционирование */
+	position: absolute;
+/* Блочная модель */
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+/* Разное */	
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+/*
+.basket::before{
+/*Позиционирование*
+	content: "";
+	position: absolute;
+	top: px;
+	left: px;
+	background-position: px px;
+/*Блочная модель*
+    width: px;
+    height: px;
+/*Оформление*
+	background-image: url("../img/basket.svg");	
+}*/
