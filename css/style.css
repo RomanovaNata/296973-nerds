@@ -1,7 +1,5 @@
 body{
 /* Блочная модель */
-	width: 1440px;
-	height: auto;
 	margin: 0px;
 	padding: 0px;
 /* Типографика */	
@@ -44,6 +42,8 @@ a{
 .about-offers,
 .about-plus-all,
 .works{
+	margin: 0;
+	padding: 0;
 /* Оформление */
 	list-style: none;
 }
@@ -108,6 +108,12 @@ a{
 /* Оформление */
 	color: #ffffff;
 	text-transform: uppercase
+}
+
+.services-list .button span:active, 
+.slider-btn span:active, 
+.filter-btn span:active{
+	opacity: 0.3;
 }
 
 .slider-btn{
@@ -200,15 +206,17 @@ a{
 }
 
 .filter-btn:hover,
-.filter-btn:focus{
+/*.filter-btn:focus */{
 /* Оформление */
-	background-color:#dfdfdf; 
+	background-color:#dfdfdf;
+	outline: none;
 	border: none;	
 }
 
 .filter-btn:active{
 /* Оформление */
-	background-color:#d5d5d5; 
+	background-color:#d5d5d5;
+	outline: none;
 	border: none;	
 }
 
@@ -243,6 +251,11 @@ a{
 	opacity: 0.1;
 }
 
+a.work:focus{
+/* Оформление */
+	opacity: 1;
+}
+
 .catalog-item-btn{
 /* Оформление */
 	background-color:#fb565a;
@@ -250,16 +263,19 @@ a{
 }
 
 .catalog-item-btn:hover,
-.catalog-item-btn:focus{
+/* .catalog-item-btn:focus */{
 /* Оформление */
 	background-color:#e74246; 
+	outline: none;
 	border: none;		
 }
 
-.catalog-item-btn:active{
+.catalog-item-btn:active
+{
 /* Оформление */
 	background-color:#d7373b; 
-	border: none;	
+	outline: none;	
+	border: none;
 }
 
 .pagination-item{
@@ -410,6 +426,7 @@ a{
 }
 
 .description-page{
+
 /* Типографика */
 	font-size: 55px;
 	line-height: 55px;
@@ -488,6 +505,11 @@ a{
 	background-color: #eeeeee;
 }
 
+.slider-wrapper{
+/* Оформление */
+	background-color: #eeeeee;
+}
+
 .slider{
 /* Оформление */
 	background-color: #eeeeee;
@@ -530,3 +552,271 @@ a{
 /*Оформление*
 	background-image: url("../img/basket.svg");	
 }*/
+
+/* Стили для сетки*/
+
+.container{
+/* Блочная модель */
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 120px;
+	outline: 2px solid green;
+}
+
+.main-navigation{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	min-width: 1160px;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;	
+	outline: 2px solid orange;
+}
+
+.logo{
+/* Блочная модель */
+	width: 160px;
+	min-height: 65px;
+	margin-right: 200px;
+	outline: 2px solid gray;
+}
+
+.menu{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 440px;
+	min-height: 65px;
+	outline: 2px solid red;
+}
+
+.menu ul{
+/* Блочная модель */
+	min-width: 100px;
+}
+
+.basket{
+/* Блочная модель */
+	width: 160px;
+	min-height: 65px;
+	margin-left: auto;	
+	outline: 2px solid black;
+}
+
+.slider{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	min-width: 1160px;
+	padding-top: 10px; 	
+	padding-left: 20px;
+	padding-right: 20px;	
+	padding-bottom: 0px;
+	margin-bottom: 80px;
+	outline: 2px solid yellow;
+}
+
+.slider-text{
+/* Блочная модель */
+	min-width: 420px;
+	min-height: 413px;	
+	margin-right: auto;
+	outline: 2px solid black;
+}
+
+.slider-tel{
+/* Блочная модель */
+	width: 698px;
+	min-height: 413px;	
+	padding-right: 20px;
+	outline: 2px solid red;
+}
+
+.services-list{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	min-width: 1100px;	
+	padding-left: 20px;
+	padding-right: 80px;
+	margin-bottom: 80px;
+	outline: 2px solid blue;
+}
+
+.services-item{
+/* Блочная модель */
+	width: 300px;
+	min-height: 350px;
+	outline: 2px solid red;
+}
+
+.about{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	min-width: 1160px;	
+	padding-left: 20px;
+	padding-right: 20px;
+	outline: 2px solid red;
+}
+
+.about-us{
+	width: 660px;
+	min-height: 525px;
+}
+
+.about-plus{
+/* Блочная модель */
+	width: 360px;
+	margin-left: auto;
+	min-height: 525px;
+}
+
+.works{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	min-width: 1160px;	
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 80px;
+	outline: 2px solid black;	
+}
+
+.work{
+/* Блочная модель */
+	width: 260px;
+	min-height: 180px;
+}
+
+.social-block{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	min-width: 1160px;	
+	padding-left: 20px;
+	padding-right: 20px;
+	outline: 2px solid red;	
+}
+
+.social{
+/* Блочная модель */
+	width: 260px;	
+	min-height: 217px;
+	outline: 2px solid black;
+}
+
+.social-block-slogan{
+/* Блочная модель */
+	width: 560px;	
+	min-height: 217px;
+	margin-left: auto;
+	margin-right: 200px;
+	outline: 2px solid blue;
+}
+
+.map{
+/* Позиционирование */
+	position: relative;
+/* Блочная модель */
+	width: 1440px;
+	min-height: 416px;
+	margin: 0 auto;
+}
+
+.contact{
+/* Позиционирование */
+	position: absolute;
+	top: 54px;
+	left: 140px;
+/* Блочная модель */
+	width: 320px;
+	min-height: 310px;
+	background-color: #ffffff;
+}
+
+.description-page{
+/* Блочная модель */
+	width: 1160px;
+	min-height: 230px;
+	padding: 0 20px;
+	margin: 0px;
+}
+
+.background{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-width: 1160px;	
+	padding-left: 20px;
+	padding-right: 20px;
+	outline: 2px solid red;	
+}
+
+.filters{
+/* Блочная модель */
+	width: 260px;
+	min-height: 840px;
+	outline: 2px solid black;
+}
+
+.catalog-wrapper{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 760px;
+	margin-left: auto;
+	background-color: pink;
+}
+
+.sorting-wrapper{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	width: 760px;
+	min-height: 135px;
+	margin-left: auto;
+	outline: 2px solid blue;	
+}
+
+.sorting-item{
+	min-width: 60px;
+}
+
+.catalog-list{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 760px;
+	outline: 2px solid green;	
+}
+
+.catalog-item{
+/* Блочная модель */
+	width: 360px;
+	min-height: 615px;	
+	margin-bottom: 35px;
+}
+
+.pagination-list{
+/* Блочная модель */
+	display: flex;
+	flex-direction: row;
+	width: 760px;
+	min-height: 135px;
+	margin-left: auto;
+	outline: 2px solid yellow;	
+}
+
+.pagination-item{
+	min-width: 50px;
+}

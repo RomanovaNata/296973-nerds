@@ -21,13 +21,17 @@
 			</nav>
 		</header>
 		<main class="container">
-			<h1 class="visually-hidden">О дизайн студии NЁRDS</h1>
-			<section class="slider">
-				<p class="slider-slogan">Долго, дорого, скурпулёзно.</p>
-				<p class="slider-description">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-				<a href="#" class="button slider-btn">Узнать больше</a>
-				<img src="img/slide1.png" class="slider-tel" width="698" height="413" alt="Дизайн студия NЁRDS">
-			</section>
+			<div class="slider-wrapper">
+				<h1 class="visually-hidden">О дизайн студии NЁRDS</h1>
+				<section class="slider">
+					<div class="slider-text">
+						<p class="slider-slogan">Долго, дорого, скурпулёзно.</p>
+						<p class="slider-description">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+						<a href="#" class="button slider-btn"><span>Узнать больше</span></a>
+					</div>
+					<img src="img/slide1.png" class="slider-tel" width="698" height="413" alt="Дизайн студия NЁRDS">
+				</section>
+			</div>
 			<div class="background">
 				<section class="services">
 					<h2 class="visually-hidden">Услуги дизайн студии</h2>
@@ -35,30 +39,32 @@
 						<li class="services-item">
 							<h3 class="service-caption">Веб-сайты</h3>
 							<p class="service-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-							<a href="#" class="button service-btn-web">Заказать</a>
+							<a href="#" class="button service-btn-web"><span>Заказать</span></a>
 						</li>
 						<li class="services-item">
 							<h3 class="service-caption">Приложения</h3>
 							<p class="service-description">Покорите топ-10 приложений в Appstore и Google Play</p>
-							<a href="#" class="button service-btn-app">Заказать</a>
+							<a href="#" class="button service-btn-app"><span>Заказать</span></a>
 						</li>
 						<li class="services-item">
 							<h3 class="service-caption">Презентации</h3>
 							<p class="service-description">Вы даже не подозреваете насколько вы изумительны!</p>
-							<a href="#" class="button service-btn-pres">Заказать</a>
+							<a href="#" class="button service-btn-pres"><span>Заказать</span></a>
 						</li>
 					</ul>
 				</section>
 				<section class="about">
 					<h2 class="visually-hidden">О компании</h2>
-					<p class="about-caption">Мы маленькая, но гордая дизайн-студия из Краснодаа</p>
-					<p class="about-tagline">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
-					<p class="about-development">Выполняем заказы на разработку</p>
-					<ul class="about-offers">
-						<li class="about-offer">Веб-сайтов любой сложности</li>
-						<li class="about-offer">Мобильных приложений для IOS и Android</li>
-						<li class="about-offer">Слайдшоу и видео для корпоративных презентаций</li>
-					</ul>
+					<section class="about-us">
+						<p class="about-caption">Мы маленькая, но гордая дизайн-студия из Краснодаа</p>
+						<p class="about-tagline">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
+						<p class="about-development">Выполняем заказы на разработку</p>
+						<ul class="about-offers">
+							<li class="about-offer">Веб-сайтов любой сложности</li>
+							<li class="about-offer">Мобильных приложений для IOS и Android</li>
+							<li class="about-offer">Слайдшоу и видео для корпоративных презентаций</li>
+						</ul>
+					</section>
 					<section class="about-plus">
 						<h2 class="visually-hidden">Плюсы дизайн студии NЁRDS</h2>
 						<img src="img/nerds.png" width="360" height="208" alt="Логотип дизайн студии NЁRDS">
@@ -106,27 +112,29 @@
 				</section>
 			</div>
 		</main>
-		<footer class="main-footer container">
+		<footer class="main-footer">
 			<section class="map">
 				<img src="img/map.jpg" width="1440" height="416" alt="NЁRDS DESIGN STUDIO. 191186, Санкт-Петербург, ул.Б. Конюшенная, д.19/8">
 				<h2 class="visually-hidden">Контактная информация</h2>
-				<adress class="contact">
+				<div class="contact">
 					<p class="contact-name">NЁRDS DESIGN STUDIO</p>
 					<p class="contact-city">191186, Санкт-Петербург,</p>
 					<p class="contact-address">ул.Б. Конюшенная, д.19/8</p>
 					<p class="contact-tel">тел. +7 (812) 275-75-75</p>
 					<a href="#" class="button contact-btn">Напишите нам</a>
-				</adress>
+				</div>
 			</section>
-			<section class="social-block">
+			<section class="social-block container">
 				<h2 class="visually-hidden">Социальные сети</h2>
 				<ul class="social">
 					<li> <a href="#" class="social-btn vk">Вконтакте</a></li>
 					<li> <a href="#" class="social-btn fb">Фейсбук</a></li>
 					<li> <a href="#" class="social-btn inst">Инстаграм</a></li>
 				</ul>
-				<p class="social-slogan">Давайте дружить, это выгодно!</p>
-				<p class="social-slogan-description">10% скидка для друзей из социальных сетей.</p>
+				<div class="social-block-slogan">
+					<p class="social-slogan">Давайте дружить, это выгодно!</p>
+					<p class="social-slogan-description">10% скидка для друзей из социальных сетей.</p>
+				</div>
 			</section>
 		</footer>
 	</body>
