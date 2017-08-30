@@ -426,7 +426,6 @@ a.work:focus{
 }
 
 .description-page{
-
 /* Типографика */
 	font-size: 55px;
 	line-height: 55px;
@@ -500,19 +499,17 @@ a.work:focus{
 /* Оформление */
 }
 
-.main-header{
+.main-header,
+.slider-wrapper,
+.slider,
+.description-page-wrapper{
 /* Оформление */
 	background-color: #eeeeee;
 }
 
-.slider-wrapper{
+.description-page-wrapper{
 /* Оформление */
-	background-color: #eeeeee;
-}
-
-.slider{
-/* Оформление */
-	background-color: #eeeeee;
+	display: flex;
 }
 
 .background{
@@ -559,7 +556,8 @@ a.work:focus{
 /* Блочная модель */
 	width: 1200px;
 	margin: 0 auto;
-	padding: 0 120px;
+	padding: 0 20px;
+	box-sizing: border-box;
 	outline: 2px solid green;
 }
 
@@ -568,9 +566,8 @@ a.work:focus{
 	display: flex;
 	flex-direction: row;
 	min-width: 1160px;
-	padding-top: 50px;
-	padding-left: 20px;
-	padding-right: 20px;	
+	justify-content: space-between;
+	padding-top: 50px;	
 	outline: 2px solid orange;
 }
 
@@ -578,7 +575,6 @@ a.work:focus{
 /* Блочная модель */
 	width: 160px;
 	min-height: 65px;
-	margin-right: 200px;
 	outline: 2px solid gray;
 }
 
@@ -601,7 +597,6 @@ a.work:focus{
 /* Блочная модель */
 	width: 160px;
 	min-height: 65px;
-	margin-left: auto;	
 	outline: 2px solid black;
 }
 
@@ -609,29 +604,28 @@ a.work:focus{
 /* Блочная модель */
 	display: flex;
 	flex-direction: row;
-	min-width: 1160px;
-	padding-top: 10px; 	
-	padding-left: 20px;
-	padding-right: 20px;	
+	min-width: 1160px; 		
 	padding-bottom: 0px;
-	margin-bottom: 80px;
 	outline: 2px solid yellow;
 }
 
 .slider-text{
 /* Блочная модель */
-	min-width: 420px;
-	min-height: 413px;	
-	margin-right: auto;
+	width: 420px;
+	height: 413px;
 	outline: 2px solid black;
 }
 
 .slider-tel{
 /* Блочная модель */
 	width: 698px;
-	min-height: 413px;	
-	padding-right: 20px;
+	height: 413px;
 	outline: 2px solid red;
+}
+
+.slider-tel-wrapper{
+/* Блочная модель */	
+	width: 780px;
 }
 
 .services-list{
@@ -639,11 +633,8 @@ a.work:focus{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	min-width: 1100px;	
-	padding-left: 20px;
-	padding-right: 80px;
-	margin-bottom: 80px;
-	outline: 2px solid blue;
+	width: 1160px;	
+	outline: 2px solid orange;
 }
 
 .services-item{
@@ -658,9 +649,7 @@ a.work:focus{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	min-width: 1160px;	
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 1160px;	
 	outline: 2px solid red;
 }
 
@@ -672,7 +661,6 @@ a.work:focus{
 .about-plus{
 /* Блочная модель */
 	width: 360px;
-	margin-left: auto;
 	min-height: 525px;
 }
 
@@ -681,10 +669,7 @@ a.work:focus{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	min-width: 1160px;	
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-bottom: 80px;
+	width: 1160px;	
 	outline: 2px solid black;	
 }
 
@@ -698,9 +683,7 @@ a.work:focus{
 /* Блочная модель */
 	display: flex;
 	flex-direction: row;
-	min-width: 1160px;	
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 1160px;	
 	outline: 2px solid red;	
 }
 
@@ -715,8 +698,6 @@ a.work:focus{
 /* Блочная модель */
 	width: 560px;	
 	min-height: 217px;
-	margin-left: auto;
-	margin-right: 200px;
 	outline: 2px solid blue;
 }
 
@@ -744,8 +725,6 @@ a.work:focus{
 /* Блочная модель */
 	width: 1160px;
 	min-height: 230px;
-	padding: 0 20px;
-	margin: 0px;
 }
 
 .background{
@@ -753,9 +732,7 @@ a.work:focus{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	min-width: 1160px;	
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 1160px;	
 	outline: 2px solid red;	
 }
 
@@ -772,7 +749,6 @@ a.work:focus{
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 760px;
-	margin-left: auto;
 	background-color: pink;
 }
 
@@ -782,12 +758,11 @@ a.work:focus{
 	flex-direction: row;
 	width: 760px;
 	min-height: 135px;
-	margin-left: auto;
 	outline: 2px solid blue;	
 }
 
 .sorting-item{
-	min-width: 60px;
+	width: 60px;
 }
 
 .catalog-list{
@@ -804,7 +779,6 @@ a.work:focus{
 /* Блочная модель */
 	width: 360px;
 	min-height: 615px;	
-	margin-bottom: 35px;
 }
 
 .pagination-list{
@@ -813,7 +787,6 @@ a.work:focus{
 	flex-direction: row;
 	width: 760px;
 	min-height: 135px;
-	margin-left: auto;
 	outline: 2px solid yellow;	
 }
 
