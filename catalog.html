@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -91,7 +91,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<button type="submit" class="button filter-btn"><span>Показать</span></button>
+						<button type="submit" class="button filter-btn">Показать</button>
 					</form>
 					</section>
 						<div class="catalog-wrapper">
@@ -193,15 +193,16 @@
 				<footer class="main-footer">
 			<section class="map">
 				<div class="map-wrapper">
-					<img src="img/map.jpg" width="1440" height="416" alt="NЁRDS DESIGN STUDIO. 191186, Санкт-Петербург, ул.Б. Конюшенная, д.19/8">
-				</div>
-					<h2 class="visually-hidden">Контактная информация</h2>
-					<div class="contact">
-						<p> <span class="contact-name">NЁRDS DESIGN STUDIO</span>
-						<span class="contact-address">191186, Санкт-Петербург,<br>
-						ул. Б. Конюшенная, д.19/8</span>
-						<span class="contact-tel">тел. +7 (812) 275-75-75</span></p>
-						<a href="#" class="button contact-btn">Напишите нам</a>
+					<div class="container">
+						<h2 class="visually-hidden">Контактная информация</h2>
+						<div class="contact">
+							<p> <span class="contact-name">NЁRDS DESIGN STUDIO</span>
+							<span class="contact-address">191186, Санкт-Петербург,<br>
+							ул. Б. Конюшенная, д.19/8</span>
+							<span class="contact-tel">тел. +7 (812) 275-75-75</span></p>
+							<a href="#" class="button contact-btn">Напишите нам</a>
+						</div>
+					</div>
 				</div>
 			</section>
 			<div class="container">
@@ -218,6 +219,27 @@
 					</div>
 				</section>
 			</div>
+			<section class="modal modal-contact">
+				<h2 class="visually-hidden">Напишите нам</h2>
+				<form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+					<p class="modal-write-us">Напишите нам</p>
+					<div class="modal-user">
+						<div class="user-name">
+							<label for="name">Ваше имя:</label>
+							<input class="user-name-input" id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+						</div>
+						<div class="user-password">
+							<label for="password">Ваш e-mail:</label>
+							<input class="user-password-input" id="password" type="text" name="password" placeholder="Для отправки ответа">
+						</div>
+						<div class="user-letter">
+							<label for="letter">Текст письма:</label>
+							<textarea class="user-letter-input" id="letter" type="text" name="letter" placeholder="В свободной форме"></textarea>
+						</div>
+					</div>
+				</form>
+				<button class="modal-close-btn" type="button">Отправить</button>
+			</section>
 		</footer>
 	</body>
 </html>
