@@ -51,45 +51,45 @@
 						</fieldset>
 						<fieldset>
 							<legend class="filter-name-grid">Сетка:</legend>
-							<ul class="filter-grid">
-								<li class="filter-item">
-									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid" value="adaptive" id="adaptive" checked>
-									<label for="adaptive">Адаптивная</label>
-								</li>
-								<li class="filter-item">
-									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid" value="fix" id="fix">
-									<label for="fix">Фиксированная</label>
-								</li>
-								<li class="filter-item">
-									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-grid" value="rubber" id="rubber" disabled>
-									<label for="rubber">Резиновая</label>
-								</li>
-							</ul>
+							<div class="filter-grid">
+								<label class="filter-item-grid">
+									<input class="visually-hidden" type="radio" name="filter-grid" value="adaptive" id="adaptive" checked>
+									<span class="filter-grid-indicator">Адаптивная</span>
+								</label>
+								<label class="filter-item-grid">
+									<input class="visually-hidden" type="radio" name="filter-grid" value="fix" id="fix">
+									<span class="filter-grid-indicator">Фиксированная</span>
+								</label>
+								<label class="filter-item-grid">
+									<input class="visually-hidden" type="radio" name="filter-grid" value="rubber" id="rubber" disabled>
+									<span class="filter-grid-indicator">Резиновая</span>
+								</label>
+							</div>
 						</fieldset>
 						<fieldset>
 							<legend class="filter-name-especially">Особенности:</legend>
-							<ul class="filter-especially">
-								<li class="filter-item">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" checked>
-									<label for="slider">Слайдер</label>
-								</li>
-								<li class="filter-item">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="advantages">
-									<label for="advantages">Блок преимуществ</label>	
-								</li>
-								<li class="filter-item">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="news" checked>
-									<label for="news">Новости</label>
-								</li>
-								<li class="filter-item">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery">
-									<label for="gallery">Галерея</label>
-								</li>
-								<li class="filter-item">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="basket">
-									<label for="basket">Корзина</label>
-								</li>
-							</ul>
+							<div class="filter-especially">
+								<label class="filter-item-especially">
+									<input class="visually-hidden" type="checkbox" name="slider" id="slider" checked>
+									<span class="filter-especially-indicator">Слайдер</span>
+								</label>
+								<label class="filter-item-especially">
+									<input class="visually-hidden" type="checkbox" name="advantages" id="advantages">
+									<span class="filter-especially-indicator">Блок преимуществ</span>
+								</label>	
+								<label class="filter-item-especially">
+									<input class="visually-hidden" type="checkbox" name="news" id="news" checked>
+									<span class="filter-especially-indicator">Новости</span>
+								</label>
+								<label class="filter-item-especially">
+									<input class="visually-hidden" type="checkbox" name="gallery" id="gallery">
+									<span class="filter-especially-indicator">Галерея</span>
+								</label>
+								<label class="filter-item-especially">
+									<input class="visually-hidden" type="checkbox" name="basket" id="basket">
+									<span class="filter-especially-indicator">Корзина</span>
+								</label>
+							</div>
 						</fieldset>
 						<button type="submit" class="button filter-btn">Показать</button>
 					</form>
@@ -107,12 +107,12 @@
 									<li>
 										<a href="#" class="sorting-item sorting-name">По названию</a>
 									</li>
-									<!--<li>
-										<a href="#" class="sorting-item sorting-more visually-hidden">От большего к меньшему</a>
+									<li>
+										<a href="#" class="sorting-item sorting-more"><span class="visually-hidden">От большего к меньшему</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
 									</li>
 									<li>
-										<a href="#" class="sorting-item sorting-less visually-hidden">От меньшего к большему</a>
-									</li>-->
+										<a href="#" class="sorting-item sorting-less"><span class="visually-hidden">От меньшего к большему</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
+									</li>
 								</ul>
 							</div>
 							<section class="catalog">
@@ -193,15 +193,13 @@
 				<footer class="main-footer">
 			<section class="map">
 				<div class="map-wrapper">
-					<div class="container">
-						<h2 class="visually-hidden">Контактная информация</h2>
-						<div class="contact">
-							<p> <span class="contact-name">NЁRDS DESIGN STUDIO</span>
-							<span class="contact-address">191186, Санкт-Петербург,<br>
-							ул. Б. Конюшенная, д.19/8</span>
-							<span class="contact-tel">тел. +7 (812) 275-75-75</span></p>
-							<a href="#" class="button contact-btn">Напишите нам</a>
-						</div>
+					<h2 class="visually-hidden">Контактная информация</h2>
+					<div class="contact">
+						<p> <span class="contact-name">NЁRDS DESIGN STUDIO</span>
+						<span class="contact-address">191186, Санкт-Петербург,<br>
+						ул. Б. Конюшенная, д.19/8</span>
+						<span class="contact-tel">тел. +7 (812) 275-75-75</span></p>
+						<a href="#" class="button contact-btn">Напишите нам</a>
 					</div>
 				</div>
 			</section>
@@ -228,13 +226,13 @@
 							<label for="name">Ваше имя:</label>
 							<input class="user-name-input" id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
 						</div>
-						<div class="user-password">
-							<label for="password">Ваш e-mail:</label>
-							<input class="user-password-input" id="password" type="text" name="password" placeholder="Для отправки ответа">
+						<div class="user-email">
+							<label for="email">Ваш e-mail:</label>
+							<input class="user-email-input" id="email" type="email" name="email" placeholder="Для отправки ответа">
 						</div>
 						<div class="user-letter">
 							<label for="letter">Текст письма:</label>
-							<textarea class="user-letter-input" id="letter" type="text" name="letter" placeholder="В свободной форме"></textarea>
+							<textarea class="user-letter-input" id="letter" name="letter" placeholder="В свободной форме"></textarea>
 						</div>
 					</div>
 				</form>
