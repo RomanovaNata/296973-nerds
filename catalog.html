@@ -52,15 +52,15 @@
 						<fieldset>
 							<legend class="filter-name-grid">Сетка:</legend>
 							<div class="filter-grid">
-								<label class="filter-item-grid">
+								<label>
 									<input class="visually-hidden" type="radio" name="filter-grid" value="adaptive" id="adaptive" checked>
 									<span class="filter-grid-indicator">Адаптивная</span>
 								</label>
-								<label class="filter-item-grid">
+								<label>
 									<input class="visually-hidden" type="radio" name="filter-grid" value="fix" id="fix">
 									<span class="filter-grid-indicator">Фиксированная</span>
 								</label>
-								<label class="filter-item-grid">
+								<label>
 									<input class="visually-hidden" type="radio" name="filter-grid" value="rubber" id="rubber" disabled>
 									<span class="filter-grid-indicator">Резиновая</span>
 								</label>
@@ -69,23 +69,23 @@
 						<fieldset>
 							<legend class="filter-name-especially">Особенности:</legend>
 							<div class="filter-especially">
-								<label class="filter-item-especially">
+								<label>
 									<input class="visually-hidden" type="checkbox" name="slider" id="slider" checked>
 									<span class="filter-especially-indicator">Слайдер</span>
 								</label>
-								<label class="filter-item-especially">
+								<label>
 									<input class="visually-hidden" type="checkbox" name="advantages" id="advantages">
 									<span class="filter-especially-indicator">Блок преимуществ</span>
 								</label>	
-								<label class="filter-item-especially">
+								<label>
 									<input class="visually-hidden" type="checkbox" name="news" id="news" checked>
 									<span class="filter-especially-indicator">Новости</span>
 								</label>
-								<label class="filter-item-especially">
+								<label>
 									<input class="visually-hidden" type="checkbox" name="gallery" id="gallery">
 									<span class="filter-especially-indicator">Галерея</span>
 								</label>
-								<label class="filter-item-especially">
+								<label>
 									<input class="visually-hidden" type="checkbox" name="basket" id="basket">
 									<span class="filter-especially-indicator">Корзина</span>
 								</label>
@@ -99,7 +99,7 @@
 								<p class="sorting-caption">Сортировать:</p>
 								<ul class="sorting">
 									<li>
-										<a href="#" class="sorting-item sorting-price">По цене</a>
+										<a href="#" class="sorting-item sorting-price sorting-item-current">По цене</a>
 									</li>
 									<li>
 										<a href="#" class="sorting-item sorting-type">По типу</a>
@@ -108,7 +108,7 @@
 										<a href="#" class="sorting-item sorting-name">По названию</a>
 									</li>
 									<li>
-										<a href="#" class="sorting-item sorting-more"><span class="visually-hidden">От большего к меньшему</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
+										<a href="#" class="sorting-item sorting-more sorting-item-current"><span class="visually-hidden">От большего к меньшему</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
 									</li>
 									<li>
 										<a href="#" class="sorting-item sorting-less"><span class="visually-hidden">От меньшего к большему</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
@@ -118,7 +118,7 @@
 							<section class="catalog">
 								<h2 class="visually-hidden">Каталог готовых шаблонов</h2>
 								<ul class="catalog-list">
-									<li class="catalog-item">
+									<li class="catalog-item catalog-item-current">
 										<img src="img/sedona.jpg" width="360" height="576" alt="Шаблон SEDONA">
 										<div class="catalog-item-description">
 											<h3>
@@ -190,9 +190,9 @@
 				</div>
 			</div>
 		</main>
-				<footer class="main-footer">
+		<footer class="main-footer">
 			<section class="map">
-				<div class="map-wrapper">
+				<div class="container">
 					<h2 class="visually-hidden">Контактная информация</h2>
 					<div class="contact">
 						<p> <span class="contact-name">NЁRDS DESIGN STUDIO</span>
@@ -236,7 +236,7 @@
 						</div>
 					</div>
 				</form>
-				<button class="modal-close-btn" type="button">Отправить</button>
+				<button class="button modal-close-btn" type="button">Отправить</button>
 			</section>
 		</footer>
 	</body>
