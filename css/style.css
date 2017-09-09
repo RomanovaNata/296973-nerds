@@ -1,5 +1,7 @@
 html{
-	box-sizing: border-box;
+/* Блочная модель */
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 body{
@@ -21,13 +23,16 @@ a{
 }
 
 img{
+/* Блочная модель */
 	max-width: 100%;
 	height: auto;
 }
+
 .filters-name fieldset{
-/* Оформление */
+/* Блочная модель */
 	margin: 0px;
 	padding: 0;
+/* Оформление */
 	border: none;
 }
 
@@ -51,6 +56,7 @@ img{
 .about-offers,
 .about-plus-all,
 .works{
+/* Блочная модель */
 	margin: 0;
 	padding: 0;
 /* Оформление */
@@ -104,6 +110,7 @@ img{
 .slider-btn:focus{
 /* Оформление */
 	background-color: #e74246;
+/* Разное */
 	cursor: pointer;
 }
 
@@ -111,7 +118,8 @@ img{
 /* Оформление */
 	background-color: #d7373b;
 	color: rgba(255,255,255,0.3);
-	box-shadow: inset 0 3px 0 0 #c13135;
+	-webkit-box-shadow: inset 0 3px 0 0 #c13135;
+	        box-shadow: inset 0 3px 0 0 #c13135;
 }
 
 .service-btn-web{
@@ -123,6 +131,7 @@ img{
 .service-btn-web:focus{
 /* Оформление */
 	background-color: #e74246;
+/* Разное */
 	cursor: pointer;	
 }
 
@@ -130,7 +139,8 @@ img{
 /* Оформление */
 	background-color: #d7373b;
 	color: rgba(255,255,255,0.3);
-	box-shadow: inset 0 3px 0 0 #c13135;	
+	-webkit-box-shadow: inset 0 3px 0 0 #c13135;
+	        box-shadow: inset 0 3px 0 0 #c13135;	
 }
 
 .service-btn-app{
@@ -149,7 +159,8 @@ img{
 /* Оформление */
 	background-color: #00aa62;
 	color: rgba(255,255,255,0.3);
-	box-shadow: inset 0 3px 0 0 #009958;	
+	-webkit-box-shadow: inset 0 3px 0 0 #009958;
+	        box-shadow: inset 0 3px 0 0 #009958;	
 }
 
 .service-btn-pres{
@@ -160,7 +171,8 @@ img{
 .service-btn-pres:hover,
 .service-btn-pres:focus{
 /* Оформление */
-	background-color: #eab534;	
+	background-color: #eab534;
+/* Разное */	
 	cursor: pointer;
 }
 
@@ -168,31 +180,49 @@ img{
 /* Оформление */
 	background-color: #e5a722;
 	color: rgba(255,255,255,0.3);
-	box-shadow: inset 0 3px 0 0 #ce961f;	
+	-webkit-box-shadow: inset 0 3px 0 0 #ce961f;
+	        box-shadow: inset 0 3px 0 0 #ce961f;	
 }
 
 .social-block ul{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 400px;
-	min-height: 217px;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
+	min-height: 217px;	
 	margin: auto;
 	margin-right: 140px;
+/* Типографика */
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 0;
 }
 
 .social-btn{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 78px;
 	height: 78px;
 /* Типографика */
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 /* Оформление */
 	background-color: #e1e1e1;
 	color: #ffffff;	
@@ -203,16 +233,19 @@ img{
 .social-btn:focus{
 /* Оформление */
 	background-color: #e74246;
+/* Разное */
 	cursor: pointer;
 }
 
 .social-btn:active{
 /* Оформление */
 	background-color: #d7373b;
-	box-shadow: inset 0 3px 0 0 #c13135;
+	-webkit-box-shadow: inset 0 3px 0 0 #c13135;
+	        box-shadow: inset 0 3px 0 0 #c13135;
 }
 
 .social-btn:active svg{
+/* Оформление */
 	opacity: 0.3;
 }
 
@@ -227,11 +260,12 @@ img{
 }
 
 .filter-btn:hover,
-/*.filter-btn:focus */{
+.filter-btn:focus {
 /* Оформление */
 	background-color:#dfdfdf;
 	cursor: pointer;
 	outline: none;
+/* Разное */
 	border: none;	
 }
 
@@ -239,9 +273,10 @@ img{
 /* Оформление */
 	background-color:#d5d5d5;
 	color: rgba(255,255,255,0.3);
+	-webkit-box-shadow: inset 0 3px 0 0 #bfbfbf;
+	        box-shadow: inset 0 3px 0 0 #bfbfbf;
 	outline: none;
 	border: none;
-	box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 
 .contact-btn{
@@ -256,6 +291,7 @@ img{
 .contact-btn:focus{
 /* Оформление */
 	background-color:#e74246;
+/* Разное */
 	cursor: pointer;	
 }
 
@@ -263,7 +299,8 @@ img{
 /* Оформление */
 	background-color:#d7373b;
 	color: rgba(255,255,255,0.3);
-	box-shadow: inset 0 3px 0 0 #c13135;	
+	-webkit-box-shadow: inset 0 3px 0 0 #c13135;
+	        box-shadow: inset 0 3px 0 0 #c13135;	
 }
 
 .work img{
@@ -300,26 +337,36 @@ a.work:focus{
 	background-color:#e74246; 
 	outline: none;
 	border: none;
+/* Разное */
 	cursor: pointer;	
 }
 
 .catalog-item-btn:active{
 /* Оформление */
 	background-color:#d7373b; 
+	-webkit-box-shadow: inset 0 3px 0 0 #c13135; 
+	        box-shadow: inset 0 3px 0 0 #c13135;
 	outline: none;	
 	border: none;
-	box-shadow: inset 0 3px 0 0 #c13135;
 }
 
 .about{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 1160px;
 }
 
 .about-us{
+/* Блочная модель */
 	width: 660px;
 	min-height: 525px;
 }
@@ -333,7 +380,6 @@ a.work:focus{
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
-/* Оформление */
 }
 
 .about-tagline{
@@ -360,9 +406,16 @@ a.work:focus{
 
 .about-offers{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	min-height: 120px;
 }
 
@@ -390,7 +443,6 @@ a.work:focus{
     height: 2px;
 /*Оформление*/
 	background-color: #fb565a;
-
 }
 
 .about-plus{
@@ -400,16 +452,19 @@ a.work:focus{
 	padding-top: 40px;
 }
 
-.about-us p, .about-plus p{
+.about-us p, 
+.about-plus p{
+/* Блочная модель */
 	margin: 0;
 }
 
 .about-plus-advantages{
+/* Блочная модель */
+	padding: 31px 0px 0px 13px;
 /* Типографика */
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 700;
-	padding: 31px 0px 0px 13px;
 	letter-spacing: 0.08px;
 /* Оформление */
 	text-transform: uppercase;
@@ -417,12 +472,18 @@ a.work:focus{
 
 .about-plus-all{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	padding-top: 59px;
 }
 
 .about-plus-all li{
+/* Блочная модель */
 	padding-right: 15px;
 }
 
@@ -431,10 +492,10 @@ a.work:focus{
 	font-size: 45px;
 	line-height: 10.06px;
 	font-weight: 700;
-/* Оформление */
 }
 
 .about-plus-percent{
+/* Типографика */
 	font-size: 28px;
 	font-weight: 700;
 	line-height: 10px;
@@ -509,6 +570,8 @@ a.work:focus{
 
 .description-page-wrapper{
 /* Оформление */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -535,7 +598,8 @@ input[type="radio"].visually-hidden{
 	border: 0;
 /* Разное */	
 	overflow: hidden;
-	clip-path: inset(100%)
+	-webkit-clip-path: inset(100%);
+	        clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	white-space: nowrap;
 }
@@ -543,7 +607,8 @@ input[type="radio"].visually-hidden{
 /* Стили для сетки*/
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 .container{
@@ -551,15 +616,23 @@ input[type="radio"].visually-hidden{
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .main-navigation{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 1160px;
-	justify-content: space-between;
 	padding-top: 50px;	
 }
 
@@ -571,10 +644,18 @@ input[type="radio"].visually-hidden{
 
 .menu{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 440px;
 	min-height: 65px;
 }
@@ -591,7 +672,7 @@ input[type="radio"].visually-hidden{
 	vertical-align: middle;
 	padding-top: 25px;
 	padding-bottom: 4px;
-/* Оформление */
+/* Типографика */
 	color: #000000;
 	font-size: 16px;
 	line-height: 30px;
@@ -600,14 +681,18 @@ input[type="radio"].visually-hidden{
 }
 
 .menu-current a{
-	border-bottom: 2px solid #fb565a;
+/* Типографика */
 	color: #000000;
+/* Оформление */
+	border-bottom: 2px solid #fb565a;
 }
 
 .basket{
 /*Позиционирование*/
 	position: relative;
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 160px;
 }
@@ -618,7 +703,7 @@ input[type="radio"].visually-hidden{
 	min-height: 65px;	
 	padding-top: 25px;
 	padding-left: 86px;
-/* Оформление */
+/* Типографика */
 	color: #000000;
 	font-size: 16px;
 	line-height: 30px;
@@ -645,9 +730,16 @@ input[type="radio"].visually-hidden{
 /*Позиционирование*/
 	position: relative;
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 1160px;
 	padding-bottom: 2px;	
 }
@@ -663,7 +755,6 @@ input[type="radio"].visually-hidden{
     height: 2px;
 /*Оформление*/
 	background-color: #eeeeee;
-
 }
 
 .services-item{
@@ -673,7 +764,6 @@ input[type="radio"].visually-hidden{
 	width: 31%;
 	min-height: 506px;
 	padding-top: 250px;
-
 }
 
 .services-item:nth-child(1)::before{
@@ -743,7 +833,6 @@ input[type="radio"].visually-hidden{
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: normal;
-/* Оформление */
 	color: #283136;
 }
 
@@ -751,9 +840,15 @@ input[type="radio"].visually-hidden{
 /*Позиционирование*/
 	position: relative;	
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 1160px;
 	margin-bottom: 80px;
 }
@@ -782,7 +877,6 @@ input[type="radio"].visually-hidden{
     height: 2px;
 /*Оформление*/
 	background-color: #eeeeee;
-
 }
 
 .work{
@@ -795,22 +889,27 @@ input[type="radio"].visually-hidden{
 
 .works-wrapper, 
 .work-wrapper{
+/*Позиционирование*/
 	position: relative;
 }
 
 .work:nth-child(1){
+/*Блочная модель*/
 	padding: 65px 0px 0px 30px;
 }
 
 .work:nth-child(2){
+/*Блочная модель*/
 	padding: 48px 0px 0px 36px;
 }
 
 .work:nth-child(3){
+/*Блочная модель*/
 	padding: 67px 0px 0px 58px;
 }
 
 .work:nth-child(4){
+/*Блочная модель*/
 	padding: 54px 0px 0px 72px;
 }
 
@@ -820,7 +919,9 @@ input[type="radio"].visually-hidden{
 	position: absolute;
 	top: 90px;
 	left: 255px;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
 /*Блочная модель*/
     width: 52px;
     height: 2px;
@@ -834,7 +935,9 @@ input[type="radio"].visually-hidden{
 	position: absolute;
 	top: 90px;
 	left: 265px;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
 /*Блочная модель*/
     width: 52px;
     height: 2px;
@@ -848,7 +951,9 @@ input[type="radio"].visually-hidden{
 	position: absolute;
 	top: 90px;
 	left: 275px;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
 /*Блочная модель*/
     width: 52px;
     height: 2px;
@@ -858,12 +963,18 @@ input[type="radio"].visually-hidden{
 
 .social-block{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	width: 1160px;
 }
 
 .social-block-slogan p{
+/* Блочная модель */
 	margin: 0;
 	padding: 0;
 }
@@ -879,7 +990,6 @@ input[type="radio"].visually-hidden{
 	line-height: 36px;
 	font-weight: 700;
 	letter-spacing: 0.1px;
-/* Оформление */
 }
 
 .social-block-slogan .social-slogan-description{
@@ -892,7 +1002,6 @@ input[type="radio"].visually-hidden{
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
-/* Оформление */
 	color: #444444;
 }
 
@@ -900,28 +1009,36 @@ input[type="radio"].visually-hidden{
 /* Блочная модель */
 	width: 100%;
 	padding: 0 20px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	min-height: 416px;
 	margin: 0 auto;
 /* Оформление */
 	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	background-size: cover;
 }
 
 .contact{
 /* Позиционирование */
 	position: relative;
-	top: 53px;
-	left: 0px;
 /* Блочная модель */
 	width: 320px;
-	min-height: 309px;
-	background-color: #ffffff;
+	min-height: 309px;	
 	padding: 50px 45px 48px 50px;
+/* Оформление */
+	background-color: #ffffff;
+}
+
+.map .container{
+/* Блочная модель */
+	padding-top: 53px;
+	padding-bottom: 0px;
 }
 
 .contact p{
+/* Блочная модель */
 	margin: 0;
 	padding: 0;
 }
@@ -933,8 +1050,7 @@ input[type="radio"].visually-hidden{
 /* Типографика */
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: 700;
-/* Оформление */	
+	font-weight: 700;	
 }
 
 .contact{
@@ -942,7 +1058,6 @@ input[type="radio"].visually-hidden{
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: normal;
-/* Оформление */
 	color: #666666;
 }
 
@@ -955,18 +1070,29 @@ input[type="radio"].visually-hidden{
 .contact-tel{
 /* Блочная модель */
 	display: block;
-	padding: 0px 0px 37px 2px;	 	
+	padding: 0px 0px 37px 2px;
+}
+
+.contact-tel a{
+	text-decoration: none;
 }
 
 .container h1{
+/* Блочная модель */
 	margin: 0;
 }
 
 .background{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 1160px;	
 }
 
@@ -978,18 +1104,32 @@ input[type="radio"].visually-hidden{
 
 .catalog-wrapper{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 760px;
 }
 
 .catalog-list{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 760px;	
 }
 
@@ -1006,7 +1146,6 @@ input[type="radio"].visually-hidden{
 .catalog-item:nth-child(6){
 /* Блочная модель */
 	margin-bottom: 24px;
-
 }
 
 .catalog-item::before{
@@ -1026,8 +1165,7 @@ input[type="radio"].visually-hidden{
     border-top-right-radius: 5px;
 }
 
-.catalog-item:hover::before,
-.catalog-item-current::before{
+.catalog-item:hover::before{
 /*Позиционирование*/
 	content: "";
 	position: absolute;
@@ -1045,11 +1183,12 @@ input[type="radio"].visually-hidden{
 }
 
 .catalog-item-description h3{
+/*Блочная модель*/
 	margin: 0;
 }
 
-.catalog-item:hover > .catalog-item-description,
-.catalog-item-current .catalog-item-description{
+.catalog-item:hover > .catalog-item-description{
+/*Блочная модель*/
 	display: block;
 }
 
@@ -1063,14 +1202,13 @@ input[type="radio"].visually-hidden{
     width: 360px;
     height: 230px;
     padding-top: 28px;
-    text-align: center;	
 /* Типографика */
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
 	text-align: center;
-/*Оформление*/
 	color: #666666;
+/*Оформление*/
 	background-color: #eeeeee;
 }
 
@@ -1093,16 +1231,12 @@ input[type="radio"].visually-hidden{
 	padding: 15px 50px 0px 50px;
 }
 
-
-
 /* Слайдер */
 
 .slider{ 
 /* Позиционирование */
 	position: relative;
-/* Блочная модель 
-	display: flex;
-	flex-direction: row;*/
+/* Блочная модель */
 	width: 1160px; 	
 	height: 424px;
 	margin: 0 auto;	
@@ -1110,7 +1244,9 @@ input[type="radio"].visually-hidden{
 }
 
 .slider input[type=radio] {
+/* Позиционирование */
     position:absolute;
+/* Оформление */
     opacity:0;
 }
 
@@ -1125,7 +1261,7 @@ input[type="radio"].visually-hidden{
 /* Типографика */
 	text-align: center;
 /* Оформление */
-	z-index: 2;	
+	z-index: 2;
 }
 
 .slider-controls label{
@@ -1134,17 +1270,20 @@ input[type="radio"].visually-hidden{
 	width: 8px;
 	height: 8px;
 	margin: 0 7px;
+/* Типографика */
 	vertical-align: top;
 /* Оформление */
 	background: #ffffff;
 	border: 9px solid #ffffff;
-	vertical-align: top;
 	border-radius: 50%;
+/* Разное */
 	cursor:pointer;
 }
+
 .slider #btn-1:checked ~ .slider-controls label[for="btn-1"],
 .slider #btn-2:checked ~ .slider-controls label[for="btn-2"],
 .slider #btn-3:checked ~ .slider-controls label[for="btn-3"]{
+/* Оформление */
 	background: #c2c2c2;
 }
 
@@ -1154,11 +1293,12 @@ input[type="radio"].visually-hidden{
 	content: "";
 	top: 5px;
 	left: 60px;
+/* Блочная модель */
+	width: 8px;
+	height: 8px;
 /* Оформление */
 	border: 2px solid #c1c1c1;
 	background: #ffffff;
-	width: 8px;
-	height: 8px;
 	border-radius: 50%;
 }
 
@@ -1168,11 +1308,12 @@ input[type="radio"].visually-hidden{
 	content: "";
 	top: 5px;
 	left: 96px;
+/* Блочная модель */
+	width: 8px;
+	height: 8px;
 /* Оформление */
 	border: 2px solid #c1c1c1;
 	background: #ffffff;
-	width: 8px;
-	height: 8px;
 	border-radius: 50%;
 }
 
@@ -1182,11 +1323,12 @@ input[type="radio"].visually-hidden{
 	content: "";
 	top: 5px;
 	left: 132px;
+/* Блочная модель */
+	width: 8px;
+	height: 8px;
 /* Оформление */
 	border: 2px solid #c1c1c1;
 	background: #ffffff;
-	width: 8px;
-	height: 8px;
 	border-radius: 50%;
 }
 
@@ -1195,6 +1337,7 @@ input[type="radio"].visually-hidden{
 	position: absolute;
 	top: 0;
 	left: 0;
+/* Блочная модель */
 	width: 100%;
 	height: 100%;
 /* Оформление */
@@ -1217,7 +1360,7 @@ input[type="radio"].visually-hidden{
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
-/* Оформление */
+/* Типографика */
 	color: #000000;
 }
 
@@ -1252,15 +1395,22 @@ input[type="radio"].visually-hidden{
 }
 
 .slide{
+/* Блочная модель */
 	display: none;
 }
-#btn-1:checked ~ .slides .slide:nth-child(1) { 
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+/* Блочная модель */
     display: block;
 }
-#btn-2:checked ~ .slides .slide:nth-child(2) { 
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+/* Блочная модель */
     display: block;
 }
-#btn-3:checked ~ .slides .slide:nth-child(3) { 
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+/* Блочная модель */
     display: block;
 }
 
@@ -1288,6 +1438,7 @@ input[type="radio"].visually-hidden{
 .range-controls .range-scale{
 /* Блочная модель */
 	height: 2px;
+/* Оформление */
 	background: #d7dcde;
 }
 
@@ -1311,42 +1462,47 @@ input[type="radio"].visually-hidden{
 	border: 10px solid #ffffff;
 	border-radius: 50%;
 	background: #ababab;
-	box-shadow: 0 2px 1px 0 #cfcfcf;
+	-webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+	        box-shadow: 0 2px 1px 0 #cfcfcf;
 /* Разное */
 	cursor: pointer;
 }
 
 .range-controls .toggle-min {
 /* Позиционирование */
-  left: 20px;
+	left: 20px;
 }
 
-.toggle-min::after{/* Позиционирование */
+.toggle-min::after{
+/* Позиционирование */
 	position: absolute;
 	content: "";
 	top: -3px;
 	left: -3px;
-/* Оформление */
-	border: 2px solid #ababab;
+/* Блочная модель */
 	width: 2px;
 	height: 2px;
+/* Оформление */
+	border: 2px solid #ababab;
 	border-radius: 50%;
 }
 
 .range-controls .toggle-max{
 /* Позиционирование */
-  left: 162px;
+	left: 162px;
 }
 
-.toggle-max::after{/* Позиционирование */
+.toggle-max::after{
+/* Позиционирование */
 	position: absolute;
 	content: "";
 	top: -3px;
 	left: -3px;
-/* Оформление */
-	border: 2px solid #ababab;
+/* Блочная модель */
 	width: 2px;
 	height: 2px;
+/* Оформление */
+	border: 2px solid #ababab;
 	border-radius: 50%;
 }
 
@@ -1362,10 +1518,10 @@ input[type="radio"].visually-hidden{
 /* Типографика */	
 	font-size: 22px;
 	line-height: 22px;
-	
 }
 
 .max-price{
+/* Типографика */
 	text-align: right;
 }
 
@@ -1387,12 +1543,14 @@ input[type="radio"].visually-hidden{
 
 .filters-name{
 /* Блочная модель */
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	width: 400px;
 	min-height: 840px;
 	padding-right: 140px;
 }
-
 
 .filters-name legend{
 /* Типографика */
@@ -1404,6 +1562,7 @@ input[type="radio"].visually-hidden{
 }
 
 .filters-name .filter-name-price{
+/* Типографика */
 	letter-spacing: 0.8px;
 }
 
@@ -1411,10 +1570,8 @@ input[type="radio"].visually-hidden{
 /* Блочная модель*/ 
 	display: inline-block;
 	width: 400px;
-/*	min-height: 70px;*/
 	padding: 54px 0px 0px 0px; 
 }
-
 
 /* Фильтр Сетка*/ 
 
@@ -1422,15 +1579,21 @@ input[type="radio"].visually-hidden{
 /* Блочная модель*/ 
 	display: inline-block;
 	width: 260px;
-/*	min-height: 70px;*/
 	padding: 54px 0px 12px 1px; 
 }
 
 .filter-grid{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 400px;
 	min-height: 100px;
 }
@@ -1441,17 +1604,21 @@ input[type="radio"].visually-hidden{
 /*Позиционирование*/
 	position: relative;
 	padding-left: 37px;
-	color: #283136;	
+/* Типографика */
 	width: 400px;
 	height: 26px;
+	color: #283136;	
+/* Разное */
 	cursor: pointer;
 }
 
 .filter-grid label{
+/* Блочная модель */
 	padding: 0px 0px 16px 0px;
 }
 
 .filter-grid label:last-child{
+/* Блочная модель */
 	padding: 0px;
 }
 
@@ -1482,11 +1649,13 @@ input[type="radio"].visually-hidden{
 /*Наведение*/
 
 .filter-grid .filter-grid-indicator:hover{
+/* Оформление */
 	color: #000000;	
 }
 
 .filter-grid input[type="radio"]:hover + .filter-grid-indicator::before,
 .filter-grid input[type="radio"]:focus + .filter-grid-indicator::before{
+/* Оформление */
 	opacity: 1;	
 }
 
@@ -1494,6 +1663,7 @@ input[type="radio"].visually-hidden{
 
 .filter-grid input[type="radio"]:disabled + .filter-grid-indicator,
 .filter-grid input[type="radio"]:disabled + .filter-grid-indicator::before{
+/* Оформление */
 	opacity: 0.1;	
 }
 
@@ -1503,16 +1673,21 @@ input[type="radio"].visually-hidden{
 /* Блочная модель*/ 
 	display: inline-block;
 	width: 400px;
-/*	min-height: 70px;*/
 	padding: 44px 0px 14px 1px;
-
 }
 
 .filter-especially{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 400px;
 	min-height: 180px;
 	padding: 0px 0px 30px 0px;
@@ -1524,13 +1699,17 @@ input[type="radio"].visually-hidden{
 /*Позиционирование*/
 	position: relative;
 	padding-left: 37px;
-	color: #283136;	
+/* Блочная модель */
 	width: 400px;
 	height: 26px;
+/* Типографика */
+	color: #283136;	
+/* Разное */
 	cursor: pointer;
 }
 
 .filter-especially label{
+/* Блочная модель */
 	padding: 0px 0px 16px 0px;
 }
 
@@ -1561,12 +1740,13 @@ input[type="radio"].visually-hidden{
 /*Наведение*/
 
 .filter-especially .filter-especially-indicator:hover{
+/* Типографика */
 	color: #000000;	
 }
 
 .filter-especially input[type="checkbox"]:hover + .filter-especially-indicator::before,
-.filter-especially input[type="checkbox"]:focus + .filter-especially-indicator::before
-{
+.filter-especially input[type="checkbox"]:focus + .filter-especially-indicator::before{
+/*Оформление*/
 	opacity: 1;	
 }
 
@@ -1574,70 +1754,89 @@ input[type="radio"].visually-hidden{
 
 .filter-especially[type="checkbox"]:disabled + .filter-especially-indicator,
 .filter-especiallyinput[type="checkbox"]:disabled + .filter-especially-indicator::before{
+/*Оформление*/
 	opacity: 0.1;	
 }
 
 .sorting-wrapper{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 100%;
 	min-height: 135px;	
 }
 
 .sorting{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	width: 625px;
 	padding-left: 267px;
 }
 
 .sorting-wrapper p{
+/* Блочная модель */
 	margin: 0;
 }
 
 .sorting li{
+/* Блочная модель */
 	display: inline-block;
 	min-width: 10px; 
 }
 
 .sorting-type{
+/* Блочная модель */
 	margin-left: 26px;
 }
 
 .sorting-name{
+/* Блочная модель */
 	margin-left: 25px;
 }
 
 .sorting-more{
+/* Блочная модель */
 	margin-left: 46px;
 }
 
 .sorting-less{
+/* Блочная модель */
 	margin-left: 17px;
 }
 
 .sorting-caption{
+/* Блочная модель */
 	display: block;
+	margin-bottom: 30px;
 /* Типографика */
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
-	margin-bottom: 30px;
-/* Оформление */
 	text-transform: uppercase;
 }
 
 .sorting-item{
-	/* Типографика */
+/* Типографика */
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
-	/* Оформление */
 	color:#231f20;
 	text-transform: uppercase;
+/* Оформление */
 	opacity: 0.3;
 }
 
@@ -1665,15 +1864,22 @@ input[type="radio"].visually-hidden{
 
 .paginator-list{
 /* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	font-size: 0;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	min-width: 760px;
 	min-height: 50px;
 	padding-bottom: 60px;
+/* Типографика */
+	font-size: 0;
 }
 
 .paginator-item{
+/* Блочная модель */
 	min-width: 50px;
 }
 
@@ -1691,8 +1897,8 @@ input[type="radio"].visually-hidden{
 	font-weight: 400;
 	vertical-align: middle;
 	text-align: center;
-/* Оформление */
 	color: #000000;
+/* Оформление */
 	background: #eeeeee;
 	border-radius: 4px;
 }
@@ -1702,9 +1908,9 @@ input[type="radio"].visually-hidden{
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: normal;
+	text-transform: uppercase;
 /* Оформление */
 	background-color: #eeeeee; 
-	text-transform: uppercase;
 }
 
 .paginator-item:hover,
@@ -1714,13 +1920,16 @@ input[type="radio"].visually-hidden{
 }
 
 .paginator-item:active{
+/* Типографика */	
+	color: rgba(149,149,149,0.3);
 /* Оформление */
 	background-color:#d5d5d5;
-	box-shadow: inset 0 3px 0 0 #b5b5b5;
-	color: #959595;
+	-webkit-box-shadow: inset 0 3px 0 0 #b5b5b5;
+	        box-shadow: inset 0 3px 0 0 #b5b5b5;
 }
 
 .paginator-item-text:active{
+/* Оформление */
 	opacity: 0.3;
 }
 
@@ -1735,7 +1944,6 @@ input[type="radio"].visually-hidden{
 .paginator-item:last-child{
 /* Блочная модель */
 	padding: 16px 80px;
-
 }
 
 /* Модальное окно */
@@ -1744,25 +1952,31 @@ input[type="radio"].visually-hidden{
 /* Позиционирование */
 	display: none;
 	position: fixed;
+	background-position: 0 0;
 /* Оформление */
 	background-color: #ffffff;
-	background-position: 0 0;
+/* Разное */
+	z-index: 3;
 }
 
 .modal-contact{
+/* Позиционирование */
 	bottom: 20px;
 	left: 50%;
 	margin-left: -450px;
 /* Блочная модель */
 	width: 960px;
-	min-height: 300px;
+	min-height: 590px;
 /* Оформление */
-	box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+	-webkit-box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+	        box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
 .modal-form .modal-write-us{
+/* Позиционирование */
 	position: relative;
-	width: 960px;
+/* Блочная модель */
+	width: 850px;
 	padding: 0px 30px 0px 98px;
 /* Типографика */
 	font-size: 45px;
@@ -1770,52 +1984,73 @@ input[type="radio"].visually-hidden{
 	font-weight: 500;
 }
 
-.modal-form .modal-write-us::before{
-/*Позиционирование*/
-	content: "";
-	position: absolute;
-	top: 11px;
-	right: 85px;
-/*Блочная модель*/
-    width: 25px;
-    height: 25px;
-/*Оформление*/
-	background-image: url("../img/close-cross.svg");
-	background-repeat: no-repeat;
- 	background-position: 0 0;
- 	opacity: 0.3;
-}
-
-.modal-form .modal-write-us:hover::before{
-	opacity: 1;
+.modal-close{
+/* Блочная модель */
+	width: 21px;
+	min-height: 21px;
+	margin: 10px 89px 0px 0px;
+/* Оформление */
+	opacity: 0.3;
+/* Разное */
 	cursor: pointer;
 }
 
-.modal-form .modal-write-us:active::before{
+.modal-close:hover{
+/* Оформление */
+	opacity: 1;
+}
+
+.modal-close:active{
+/* Оформление */
 	opacity: 0.1;
 }
 
 .modal-form{
+/* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 960px;
 	padding: 67px 0px 0px 0px;
 }
 
 .modal-contact .modal-form p{
+/* Блочная модель */
 	margin: 0;
 }
 
 .modal-user{
+/* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 960px;
 	padding: 0px 0px 0px 100px;
 }
 
 .user-name{
+/* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 360px;
 	margin-right: 40px;
 }
@@ -1831,13 +2066,21 @@ input[type="radio"].visually-hidden{
 }
 
 .user-name-input{
+/* Блочная модель */
 	width: 360px;
 }
 
 .user-email{
+/* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 360px;
 }
 
@@ -1852,13 +2095,21 @@ input[type="radio"].visually-hidden{
 }
 
 .user-email-input{
+/* Блочная модель */
 	width: 360px;
 }
 
 .user-letter{
+/* Блочная модель */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 760px;
 }
 
@@ -1874,10 +2125,12 @@ input[type="radio"].visually-hidden{
 }
 
 .user-letter-input{
+/* Блочная модель */
 	width: 760px;
 }
 
 /* Покой */
+
 .user-name input[type="text"],
 .user-email input[type="email"],
 .user-letter textarea {
@@ -1886,26 +2139,33 @@ input[type="radio"].visually-hidden{
 	line-height: 18px;
  	font-weight: 400;
 	color: #a1a1a1;
+/* Оформление */
  	border-radius: 2px solid #d7dcde;
  	border: 2px solid #d7dcde;
 }
 
 .user-name input[type="text"]{
+/* Типографика */
 	letter-spacing: 0.3px;
 }
 
 .user-email input[type="email"]{
+/* Типографика */
 	letter-spacing: 0.5px;
 }
 
 .user-letter textarea{
+/* Типографика */
 	letter-spacing: 0.3px;
+	resize: none;
 }
 
 /* Наведение рамка */
+
 .user-name input:hover,
 .user-email input:hover,
 .user-letter textarea:hover{
+/* Оформление */
 	border: 2px solid #b4b9bb;
 } 
 
@@ -1913,6 +2173,7 @@ input[type="radio"].visually-hidden{
 .user-name input:focus,
 .user-email input:focus,
 .user-letter textarea:focus{
+/* Оформление */
 	border: 2px solid #000000;
 	outline: none;
 }
@@ -1929,7 +2190,9 @@ input[type="radio"].visually-hidden{
 .user-name input:invalid,
 .user-email input:invalid,
 .user-letter textarea:invalid{
+/* Типографика */
 	color: #e74246;
+/* Оформление */
 	border: 2px solid #e74246;
 } 
 
@@ -1937,19 +2200,24 @@ input[type="radio"].visually-hidden{
 .user-name input[type="text"]:invalid,
 .user-email input[type="email"]:invalid,
 .user-letter textarea:invalid{
+/* Типографика */
 	color: #e74246;
+/* Оформление */
 	border: 2px solid #e74246;
 } 
 
 .user-name-input{
+/* Блочная модель */
 	padding: 13px 10px 15px 14px;	
 }
 
 .user-email-input{
+/* Блочная модель */
 	padding: 13px 10px 15px 14px;	
 }
 
 .user-letter-input{
+/* Блочная модель */	
 	padding: 9px 10px 10px 12px;	
 	min-height: 117px;
 }
@@ -1957,24 +2225,32 @@ input[type="radio"].visually-hidden{
 .modal-close-btn{
 /* Блочная модель */	
 	min-height: 50px;
-	padding: 16.5px 82px;
-	margin: 45px 600px 80px 98px;
+	padding: 16px 82px;
+	margin: 47px 600px 78px 100px;
 /* Оформление */
-	background-color: #fb565a;	
+	background-color: #fb565a;
+	border: none;
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus{
 /* Оформление */
 	background-color: #e74246;
+	outline: none;
+	border: none;
+/* Разное */
 	cursor: pointer;
 }
 
 .modal-close-btn:active{
-/* Оформление */
-	background-color: #d7373b;
+/* Типографика */
 	color: rgba(255,255,255,0.3);
-	box-shadow: inset 0 3px 0 0 #c13135;
+/* Оформление */
+	background-color: #d7373b;	
+	-webkit-box-shadow: inset 0 3px 0 0 #c13135;	
+	        box-shadow: inset 0 3px 0 0 #c13135;
+	outline: none;
+	border: none;
 }
 
 /* Позиционирование */
